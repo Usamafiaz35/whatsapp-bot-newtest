@@ -53,6 +53,9 @@ async function startBot() {
         const msg = m.messages[0]
         if (!msg.message || msg.key.fromMe) return
 
+        
+        if (msg.key.remoteJid === 'status@broadcast' || msg.key.remoteJid?.endsWith('@broadcast')) return
+
         const messageText =
             msg.message.conversation ||
             msg.message.extendedTextMessage?.text ||
