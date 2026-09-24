@@ -3,7 +3,7 @@ const { Boom } = require('@hapi/boom')
 const qrcode = require('qrcode')
 const express = require('express')
 
-const N8N_WEBHOOK_URL = 'https://shaziafiaz35.app.n8n.cloud/webhook/whatsapp'
+const N8N_WEBHOOK_URL = 'https://obsoletely-unadopted-kannon.ngrok-free.dev/webhook/whatsapp'
 const PORT = process.env.PORT || 3000
 
 let globalSock = null
